@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with forms</title>
+</head>
+<body>
+
+<h1><b>lunch special</b></h1>
+<h2><b>Working Days and Time: monday thry friday time, 11 am ~ 3 pm</b></h2>
+
+<form action="/submit_lunch_order" method="post">
+
+<b>$9.95 (plus tax)</b>
+
+<h2>Order Information</h2>
+  <label for="Name">Name:</label>
+  <input type="Name" name="Name" id="Name" required placeholder="Enter your Name" />
+    <fieldset>
+        <legend>Here or To Go</legend>
+        <input type="radio" id="Here" name="Here or To Go" value="Here" required>
+        <label for="Here">Here</label><br>
+        <input type="radio" id="To Go" name="To Go" value="To Go">
+        <label for="To Go">To Go</label><br>
+    </fieldset>
+
+
+<h3><b>Sandwich</b></h3>
+    <!-- Sandwich choice for Monday radio buttons -->
+    <fieldset>
+        <legend>Monday Sandwich Choice:</legend>
+        <input type="radio" id="Tomato Mozzarella" name="monday_sandwich" value="Tomato Mozzarella" required>
+        <label for="Tomato Mozzarella">Tomato Mozzarella</label><br>
+        <input type="radio" id="Chicken Salad" name="monday_sandwich" value="Chicken Salad">
+        <label for="Chicken Salad">Chicken Salad</label><br>
+    </fieldset>
+
+    <!-- Sandwich choice for Tuesday radio buttons -->
+    <fieldset>
+        <legend>Tuesday Sandwich Choice:</legend>
+        <input type="radio" id="Greek Salad Wrap" name="tuesday_sandwich" value="Greek Salad Wrap" required>
+        <label for="Greek Salad Wrap">Greek Salad Wrap</label><br>
+        <input type="radio" id="Toto Wrap" name="tuesday_sandwich" value="Toto Wrap">
+        <label for="Toto Wrap">Toto Wrap</label><br>
+    </fieldset>
+
+    <!-- Sandwich choice for Wednesday radio buttons -->
+    <fieldset>
+        <legend>Wednesday Sandwich Choice:</legend>
+        <input type="radio" id="Red Pepper Hummus" name="wednesday_sandwich" value="Turkey Club" required>
+        <label for="Red Pepper Hummus">Red Pepper Hummus</label><br>
+        <input type="radio" id="Roasted Turkey" name="wednesday_sandwich" value="Roasted Turkey">
+        <label for="Roasted Turkey">Roasted Turkey</label><br>
+    </fieldset>
+
+    <!-- Sandwich choice for Thursday radio buttons -->
+    <fieldset>
+        <legend>Thursday Sandwich Choice:</legend>
+        <input type="radio" id="Carrot-Ginger Hummus Wrap" name="thursday_sandwich" value="Carrot-Ginger Hummus Wrap" required>
+        <label for="Carrot-Ginger Hummus Wrap">Carrot-Ginger Hummus Wrap</label><br>
+        <input type="radio" id="Egg Salad" name="thursday_sandwich" value="Egg Salad">
+        <label for="Egg Salad">Egg Salad</label><br>
+    </fieldset>
+
+    <!-- Sandwich choice for Friday radio buttons -->
+    <fieldset>
+        <legend>Friday Sandwich Choice:</legend>
+        <input type="radio" id="Dado Wrap" name="friday_sandwich" value="Dado Wrap" required>
+        <label for="Dado Wrap">Dado Wrap</label><br>
+        <input type="radio" id="Tuna Salad" name="friday_sandwich" value="Tuna Salad">
+        <label for="Tuna Salad">Tuna Salad</label><br>
+    </fieldset>
+
+    <button type="submit">Gluten Free Bread (75cents extra)</button>
+    <button type="reset">Reset</button>
+
+
+
+<h3><b>Snacks</h3></b>
+    <!-- Snack choice -->
+    <label for="snack_choice">Choose a snack:</label>
+    <select id="snack_choice" name="snack_choice" required>
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Potato Chips">Potato Chips</option>
+        </select>
+
+<h3><b>Regular Size Drink</b></h3>
+    <!-- Regular size drink choice -->
+    <fieldset>
+        <legend>Choose a drink:</legend>
+        <input type="radio" id="Coffee" name="regular size drink" value="Coffee" required>
+        <label for="Coffee">Coffee</label><br>
+        <input type="radio" id="Iced Coffee" name="regular size drink" value="Iced Coffee">
+        <label for="Iced Coffee">Iced Coffee</label><br>
+        <input type="radio" id="Organic Peppermint" name="regular size drink" value="Organic Peppermint">
+        <label for="Organic Peppermint">Organic Peppermint</label><br>
+
+        <label for="Hot or Iced">Choose Hot or Iced:</label>
+        <select id="Hot or Iced Sencha Green Tea" name="Hot or Iced Sencha Green Tea" required>
+            <option value="Hot Sencha Green Tea">Hot Sencha Green Tea</option>
+            <option value="Iced Sencha Green Tea">Iced Sencha Green Tea</option>
+        </select>
+
+        <label for="Hot or Iced">Choose Hot or Iced:</label>
+        <select id="Hot or Iced Organic Peppermint" name="Hot or Iced Organic Peppermint" required>
+            <option value="Hot Keemun Black Tea">Hot Keemun Black Tea</option>
+            <option value="Iced Keemun Black Tea">Iced Black Tea</option>
+        </select>
+    </fieldset>
+    <input type="checkbox" name="select" id="Drink (75 extra)" value="Drink (75 extra)">
+<label for="Drink (75 extra)">Drink (75¢ extra)</label><br>
+
+<h3><b>Extras</b></h3>
+
+    <input type="checkbox" name="select" id="$1.50 extra for any regular size Bubble Tea" value="$1.50 extra for any regular size Bubble Tea">
+<label for="$1.50 extra for any regular size Bubble Tea">$1.50 extra for any regular size Bubble Tea</label><br>
+
+<button type="Place Order">Place Order</button>
+    <button type="reset">Reset</button>
+</form>
+</body>
+</html>
+
+
+
+          
+   

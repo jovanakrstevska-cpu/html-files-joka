@@ -1,0 +1,87 @@
+body {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Outer border & spacing */
+.container {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    background-color: #333;
+    padding: 6px;
+    display: grid;
+    gap: 6px;
+
+    /* EXACT GRID SIZES FROM THE IMAGE */
+    grid-template-columns: 120px 310px 20px;
+    grid-template-rows: 120px 180px 50px 120px;
+}
+
+/* Default box style */
+.box {
+    background: #f7f2de;
+}
+
+/* Colors */
+.red { background: #e44734; }
+.blue { background: #3b9ecf; }
+.yellow { background: #fde501; }
+.cream { background: #f7f2de; }
+
+/* POSITIONING (EXACT LIKE THE IMAGE) */
+
+/* Top-left cream block */
+.top-left {
+    grid-column: 1;
+    grid-row: 1;
+    height: 90%;
+    width: 96%;
+}
+
+/* Big red block */
+.red {
+    grid-column: 2 / 4;
+    grid-row: 1 / 4;
+    height: 99%;
+}
+
+/* Middle-left cream block */
+.mid-left {
+    grid-column: 1;
+    grid-row: 2 ;
+    height: 129%;
+    width: 96%;
+}
+
+/* Bottom-left blue block */
+.blue {
+    grid-column: 1;
+    grid-row:  4;
+    width: 96%;
+}
+
+/* Bottom middle cream block */
+.bottom-mid {
+    grid-column: 2;
+    grid-row: 4;
+    width: 98%;
+}
+
+/* Small cream block next to bottom-mid */
+.small-cream {
+    grid-column: 3;
+    grid-row: 4;
+    height: 43%;
+}
+
+/* Yellow rectangle at the bottom-right */
+.yellow {
+    grid-column: 3;
+    grid-row: 4;
+    align-self: end;
+    height: 43%;
+}
